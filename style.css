@@ -1,0 +1,105 @@
+
+/* start global rules */
+
+* {
+    box-sizing: border-box;
+    color:black;
+    font-family: monospace, cursive;
+}
+
+/* end global rules */
+
+/* start body rules */
+
+body {
+background-image: linear-gradient(to top, #a8edea 0%, #273081 100%);
+background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+.container{   
+     background-color: transparent;
+}
+
+div h2{
+    text-align: center;
+    font-family: serif;
+    font-size: -webkit-xxx-large;
+}
+form {
+    text-align: center;
+    width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-color:skyblue;
+}
+.table{
+    width: 450px;
+    height:150px;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-color:transparent;
+
+ }
+ input{
+    text-align:center;
+
+ }
+
+ table thead :hover{
+    border-bottom:3px solid  black;
+    box-shadow: 0px 1px 9px -3.5px blue;
+
+ 
+ }
+ i.id{
+    position: relative;
+    right: 176px;
+    top: 42px;
+    border-right: 1px solid #0000005e;
+    color:#273081;
+}
+i.name {
+    position: relative;
+    right: 169px;
+    top: 42px;
+    border-right: 1px solid #0000005e;
+    color:#273081;
+
+}
+i.country{
+    position: relative;
+    right: 158px;
+    top: 42px;
+        border-right: 1px solid #0000005e;
+    color:#273081;
+
+}
+i.birthday{
+    position: relative;
+    right: 154px;
+    top: 42px;
+    border-right: 1px solid #0000005e;
+    color:#273081;
+
+} 
+i.email{
+    position: relative;
+    right: 165px;
+    top: 42px;
+    border-right: 1px solid #0000005e;
+    color:#273081;
+
+} 
+ 
+
+
+
+
+
