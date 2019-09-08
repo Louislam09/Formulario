@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link para los iconos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,33 +17,39 @@
 <body>
     <div class="container">
         <h2>Friend registration form</h2>
+        <br>
         <form>
             <div class="form-group">
-                <label for="txtId">Id:</label>
-                <input type="text" class="form-control" id="txtId" aria-placeholder="Enter the id"></input>
+                <i class="material-icons id">perm_identity</i>
+                <label for="txtId">ID</label>
+                <input type="text" class="form-control" id="txtId" placeholder="Enter the id" required></input>
             </div>
             <div class="form-group">
-                <label for="txtName">Name:</label>
-                <input type="text" class="form-control" id="txtName" aria-placeholder="Enter the name"></input>
+                <i class="material-icons name">account_box</i>
+                <label for="txtName">Name</label>
+                <input type="text" class="form-control" id="txtName" placeholder="Enter the name"></input>
             </div>
             <div class="form-group">
-                <label for="txtCountry">Country:</label>
-                <input type="text" class="form-control" id="txtCountry" aria-placeholder="Enter the Country"></input>
+                <i class="material-icons country">outlined_flag</i>
+                <label for="txtCountry">Country</label>
+                <input type="text" class="form-control" id="txtCountry" placeholder="Enter the Country"></input>
             </div>
             <div class="form-group">
-                <label for="txtBirthday">Birthday:</label>
-                <input type="date" class="form-control" id="txtBirthday" aria-placeholder="Enter the Birthday"></input>
+                <i class="material-icons birthday">cake</i>
+                <label for="txtBirthday">Birthday</label>
+                <input type="date" class="form-control" id="txtBirthday" placeholder="Enter the Birthday"></input>
             </div>
             <div class="form-group">
-                <label for="txtEmail">Email:</label>
-                <input type="email" class="form-control" id="txtEmail" aria-placeholder="Enter the Email"></input>
+                <i class="material-icons email">email</i>
+                <label for="txtEmail">Email</label>
+                <input type="email" class="form-control" id="txtEmail" placeholder="Enter the Email"></input>
             </div>
-
-            <button type="button" class="btn btn-default" id="btnSaveFriend">Save</button>
+            <br>
+            <button type="button" class="btn btn-default" id="btnSaveFriend" style="width: 80px;">Save</button>
+            <button type="reset" class="btn btn-default">Limpiar</button>
 
         </form>
     </div>
-
     <div class="container">
         <h2>My friends</h2>
         <table class="table table-hover" id="friendsTable">
@@ -60,10 +69,10 @@
         </table>
     </div>
 
-    <script src="js/businessLogic.js"></script>
-    <script src="js/uiLogic.js"></script>
+    <script src="businessLogic.js"></script>
+    <script src="uiLogic.js"></script>
 
-     <!--    Esto es booststrap -->
+    <!--    Esto es booststrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
