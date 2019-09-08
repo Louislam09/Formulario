@@ -10,7 +10,7 @@ function saveFriend() {
         sCountry = document.querySelector('#txtCountry').value,
         dBirthday = document.querySelector('#txtBirthday').value,
         sEmail = document.querySelector('#txtEmail').value;
-
+    
     addFriendToSystem(sId, sName, sCountry, dBirthday, sEmail);
     drawFriendsTable();
 }
