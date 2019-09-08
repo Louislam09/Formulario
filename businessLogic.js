@@ -9,10 +9,7 @@ function addFriendToSystem(pid, pname, pcountry, pbirthday, pemail) {
         country: pcountry,
         birthday: pbirthday,
         email: pemail
-
-
     };
-    console.log(newFriend);
 
     friendList.push(newFriend);
     localStorageFriendList(friendList);
@@ -20,20 +17,16 @@ function addFriendToSystem(pid, pname, pcountry, pbirthday, pemail) {
 
 function getFriendList() {
     var storedList = localStorage.getItem('localFriendList');
-    if (storedList == null) {
+
+    if (storedList == null)
         friendList = [];
-    } else {
+    else
         friendList = JSON.parse(storedList);
-    }
+
     return friendList;
 }
 
 function localStorageFriendList(plist) {
     localStorage.setItem('localFriendList', JSON.stringify(plist));
 }
-
-
-
-
-
 
