@@ -2,8 +2,7 @@
 document.querySelector('#btnSaveFriend').addEventListener("click", saveFriend);
 drawFriendsTable();
 
-
-
+// Inserts a new friend in the list and table.
 function saveFriend() {
     var sId = document.querySelector('#txtId').value,
         sName = document.querySelector('#txtName').value,
@@ -15,6 +14,7 @@ function saveFriend() {
     drawFriendsTable();
 }
 
+// Render the friend list in the table.
 function drawFriendsTable() {
     var list = getFriendList(),
         tbody = document.querySelector('#friendsTable tbody');
@@ -36,27 +36,12 @@ function drawFriendsTable() {
         birthdayCell.innerHTML = list[i].birthday;
         emailCell.innerHTML = list[i].email;
 
-
-
         var inputSelect = document.createElement('input');
         inputSelect.type = 'radio';
         inputSelect.value = list[i].id;
         selectCell.appendChild(inputSelect); 
 
-
-
         tbody.appendChild(row);
-
     }
-
-
-
 }
-
-
-
-
-
-
-
 
